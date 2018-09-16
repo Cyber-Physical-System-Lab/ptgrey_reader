@@ -4,16 +4,16 @@
 Enter the catkin work space  
 ```
 cd YOUR_ROS_WORKSPACE/src  
-git clone https://github.com/gaowenliang/ptgrey_reader.git
+git clone https://github.com/Cyber-Physical-System-Lab/ptgrey_reader.git
 ```
 
 ## Install dependency for ptgrey
 
-For TX2 the you can direct use our install script
+For TX2 the you can directly use our install script
 
 ```
 cd YOUR_ROS_WORKSPACE/src/ptgrey_reader/
-sh autoinstall_tx2.sh
+sh script/autoinstall_tx2.sh
 ```
 
 and jump to run step
@@ -46,6 +46,7 @@ cd flycapture2-2.11.3.121-amd64/
 cd YOUR_ROS_WORKSPACE/src/ptgrey_reader/install/arm64/
 tar zxvf flycapture.2.11.3.121_arm64.tar.gz
 cd flycapture.2.11.3.121_arm64/
+sudo flycap2-conf
 cd include/
 sudo mkdir /usr/include/flycapture
 sudo cp *.h /usr/include/flycapture

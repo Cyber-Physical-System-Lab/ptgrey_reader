@@ -9,7 +9,9 @@ make
 sudo make install 
 cd $PKG_PATH/install/arm64/
 tar zxvf flycapture.2.11.3.121_arm64.tar.gz
-cd flycapture.2.11.3.121_arm64/include/
+cd flycapture.2.11.3.121_arm64/
+sudo flycap2-conf
+cd include/
 sudo mkdir -p /usr/include/flycapture
 sudo cp *.h /usr/include/flycapture
 cd ../lib/
